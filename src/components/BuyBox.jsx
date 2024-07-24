@@ -4,4 +4,4 @@ const BuyBox = () => {
   )
 }
 
-export default BuyBox
+export default BuyBox;

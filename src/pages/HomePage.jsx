@@ -1,8 +1,9 @@
 import Layout from '../components/Layout';
 import Gallery from '../components/Gallery';
 import ProductListing from '../components/product-listing/ProductListing';
-import ProductCards from '../components/Collection';
+import Collection from '../components/Collection';
 import Section from '../components/Section';
+import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
@@ -20,12 +21,12 @@ const HomePage = () => {
           '/public/home-slide-8.jpeg',
         ]}
       />
-      <Section.jsx>
-        <ProductCards />
-      </Section.jsx>
-      <Section.jsx>
+      <Section title="Coleções em Destaque">
+        <Collection />
+      </Section>
+      <Section title="Produtos em Alta" options={<Link to='/product-view'>Ver mais</Link>}>
         <ProductListing />  
-      </Section.jsx>
+      </Section>
     </Layout>
   );
 };

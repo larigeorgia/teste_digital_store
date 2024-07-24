@@ -1,13 +1,9 @@
 import React from 'react';
 import Imgs from './Imgs';
 
-const ProductCards = () => {
+const Collection = () => {
     return (
         <>
-            <section className="py-12">
-            <h2 className="text-black font-bold font-oswald text-3xl">
-               Coleções em Destaque
-            </h2>
                 <div className="flex flex-wrap justify-right">
                     {Imgs.map((imagem, index) => (
                         <div key={index} className="max-w-sm mx-4 mb-8 bg-white rounded-lg overflow-hidden">
@@ -23,9 +19,8 @@ const ProductCards = () => {
                         </div>
                     ))}
                 </div>
-            </section>
         </>
     );
 }
 
-export default ProductCards;
+export default Collection;

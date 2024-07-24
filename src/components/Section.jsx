@@ -1,7 +1,8 @@
-const Section = ({ children, title}) => {
+const Section = ({ children, title, options}) => {
   return (
-    <div className="">
-      <h1>{title}</h1>
+    <div className="text-black font-bold font-oswald text-3xl">
+      <h2>{title}</h2>
+      <h3>{options}</h3>
     <div>
       { children }
     </div>
